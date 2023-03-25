@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div id="calculator">
+    <div id="input-div">
+      <div class="label-error-div">
+      <p class="input-label">Bill</p>
+      <p id="bill-input-error" class="input-error"></p>
+      </div>
+      <input id="money-amount" class="num-input" type="number"  name="money-amount" placeholder="$">
+
+      <p id="tip-label" class="input-label">Select Tip %</p>
+      <div class="values">
+      <input id="five-tip" class="tip-button" onclick="fiveTip()" type="button" value="5%"><input id="ten-tip" class="tip-button" onclick="tenTip()" type="button" value="10%"><input id="fifteen-tip" onclick="fifteenTip()" class="tip-button" type="button" value="15%">
+      </div>
+      <div class="values">
+      <input id="twentyfive-tip" class="tip-button" onclick="twentyFiveTip()" type="button" value="25%"><input id="fifty-tip" class="tip-button" onclick="fiftyTip()" type="button" value="50%"><input id="custom-tip-button" class="tip-button" type="number" placeholder="Custom">
+      </div>
+
+      <div class="label-error-div">
+      <p class="input-label">Number of People</p>
+      <p id="people-input-error" class="input-error"></p>
+      </div>
+      <input id="num-of-people" class="num-input" type="number" name="num-of-people" placeholder="type">
+    </div>
+    <div id="display">
+      <div class="tip-div">
+        <div class="tip-amount labels-div">
+          <div class="labels">
+          <p class="main-label money-label">Tip Amount</p>
+          <p class="money-label">/ person</p>
+           </div>
+          <p id="person-tip" class="money">$0.00</p>
+        </div>
+
+        <div class="total labels-div">
+          <div class="labels">
+          <p class="main-label money-label">Total</p>
+          <p class="money-label">/ person</p>
+          </div>
+          <p id="total-tip" class="money">$0.00</p>
+        </div>
+      </div>
+      
+      <input id="reset-button" onclick="reset()" type="reset" value="RESET">
+    </div>
+  </div>
+
+<!-- <div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Nikulini</a>.
+</div> -->
+  <script src="script.js"></script>
+</body>
+</html>
